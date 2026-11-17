@@ -1,0 +1,29 @@
+:root{--bg:#eef1ee;--ink:#14302c;--mute:#5d726d;--line:#d3dcd8;--card:#fbfcfb;--accent:#d98c1f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font),system-ui,sans-serif;line-height:1.5}
+main{max-width:1040px;margin:0 auto;padding:40px 20px 80px}
+header{margin-bottom:28px}h1{font-size:2.6rem;margin:0;letter-spacing:-.02em}header p{margin:4px 0 0;color:var(--mute)}
+h2{font-size:1.05rem;margin:0 0 12px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;margin-bottom:20px}
+.ask{border:2px solid var(--ink)}
+.row{display:flex;gap:8px}
+input{flex:1;padding:12px 14px;font:inherit;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
+button{font:inherit;padding:12px 20px;border:0;border-radius:6px;background:var(--ink);color:#fff;cursor:pointer}
+button:disabled{opacity:.6}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:transparent;color:var(--ink);border:1px solid var(--line);padding:6px 12px;font-size:.85rem}
+.answer{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:1.1rem}
+.err{color:#a3321f}
+details{font-size:.9rem;color:var(--mute)}pre{white-space:pre-wrap;background:#e6ebe8;padding:10px;border-radius:6px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
+.kpis div{padding:4px 0;border-left:4px solid var(--accent);padding-left:14px}
+.kpis b{display:block;font-size:1.8rem}.kpis span{color:var(--mute);font-size:.9rem}
+.bars{display:flex;align-items:flex-end;gap:8px;height:180px}
+.bar{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px}
+.bar i{display:block;width:100%;background:var(--ink);border-radius:4px 4px 0 0}
+.bar span{font-size:.75rem;color:var(--mute)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+table{width:100%;border-collapse:collapse;font-size:.92rem}td,th{padding:8px 6px;border-bottom:1px solid var(--line);text-align:left}.r{text-align:right}
+.scroll{overflow-x:auto}
+@media(max-width:720px){.two,.kpis{grid-template-columns:1fr}.row{flex-direction:column}}

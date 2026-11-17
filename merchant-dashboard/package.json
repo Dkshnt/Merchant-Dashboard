@@ -1,0 +1,24 @@
+{
+  "name": "merchant-dashboard",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "tsx scripts/seed.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "better-sqlite3": "^11.5.0",
+    "next": "^14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}
